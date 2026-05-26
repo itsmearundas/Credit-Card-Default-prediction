@@ -4,7 +4,7 @@ import numpy as np
 from flask import Flask, request, render_template, jsonify
 
 # Load the trained Random Forest model
-model_filename = 'random_forest_credit_default_model.joblib'
+model_filename = 'random_forest_model.joblib'
 loaded_model = joblib.load(model_filename)
 
 # Define the preprocessing steps

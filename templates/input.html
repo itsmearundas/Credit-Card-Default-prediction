@@ -439,116 +439,123 @@
             </div>
 
             <div class="section">
-                <h3 class="section-title">
-                    <span class="section-icon">📊</span>
-                    Payment History
-                    <span class="risk-indicator risk-high">High Risk Indicator</span>
-                </h3>
-                <p class="helper-text" style="margin-bottom: 15px; font-weight: 500;">Repayment status for the last 6 months (September to April)</p>
-                <p class="helper-text" style="margin-bottom: 15px;">-2: No consumption | -1: Paid in full | 0: Revolving credit | 1+: Months of delay</p>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="PAY_SEPT">September Payment Status</label>
-                        <input type="number" id="PAY_SEPT" name="PAY_SEPT" value="0" placeholder="e.g., -1">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_AUG">August Payment Status</label>
-                        <input type="number" id="PAY_AUG" name="PAY_AUG" value="0" placeholder="e.g., 0">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_JUL">July Payment Status</label>
-                        <input type="number" id="PAY_JUL" name="PAY_JUL" value="0" placeholder="e.g., 0">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="PAY_JUN">June Payment Status</label>
-                        <input type="number" id="PAY_JUN" name="PAY_JUN" value="0" placeholder="e.g., 1">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_MAY">May Payment Status</label>
-                        <input type="number" id="PAY_MAY" name="PAY_MAY" value="0" placeholder="e.g., 0">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_APR">April Payment Status</label>
-                        <input type="number" id="PAY_APR" name="PAY_APR" value="0" placeholder="e.g., -1">
-                    </div>
-                </div>
-            </div>
+    <h3 class="section-title">
+        <span class="section-icon">📊</span>
+        Payment History Status
+        <!-- <span class="risk-indicator risk-high">High Risk Indicator</span> -->
+    </h3>
+    <p class="helper-text" style="margin-bottom: 15px; font-weight: 500;">Repayment status for the last 6 months</p>
+    <p class="helper-text" style="margin-bottom: 15px;">-2: No consumption | -1: Paid in full | 0: Revolving credit | 1+: Months of delay</p>
 
-            <div class="section">
-                <h3 class="section-title">
-                    <span class="section-icon">💰</span>
-                    Bill Statements
-                    <span class="risk-indicator risk-medium">Medium Risk Indicator</span>
-                </h3>
-                <p class="helper-text" style="margin-bottom: 15px; font-weight: 500;">Monthly bill amounts (₹) from September to April</p>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="BILL_AMT_SEPT">September Bill</label>
-                        <input type="number" id="BILL_AMT_SEPT" name="BILL_AMT_SEPT" required placeholder="e.g., 25000">
-                    </div>
-                    <div class="form-group">
-                        <label for="BILL_AMT_AUG">August Bill</label>
-                        <input type="number" id="BILL_AMT_AUG" name="BILL_AMT_AUG" required placeholder="e.g., 30000">
-                    </div>
-                    <div class="form-group">
-                        <label for="BILL_AMT_JUL">July Bill</label>
-                        <input type="number" id="BILL_AMT_JUL" name="BILL_AMT_JUL" required placeholder="e.g., 28000">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="BILL_AMT_JUN">June Bill</label>
-                        <input type="number" id="BILL_AMT_JUN" name="BILL_AMT_JUN" required placeholder="e.g., 27000">
-                    </div>
-                    <div class="form-group">
-                        <label for="BILL_AMT_MAY">May Bill</label>
-                        <input type="number" id="BILL_AMT_MAY" name="BILL_AMT_MAY" required placeholder="e.g., 26000">
-                    </div>
-                    <div class="form-group">
-                        <label for="BILL_AMT_APR">April Bill</label>
-                        <input type="number" id="BILL_AMT_APR" name="BILL_AMT_APR" required placeholder="e.g., 24000">
-                    </div>
-                </div>
-            </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="PAY_SEPT">Month - 1</label>
+            <input type="number" id="PAY_SEPT" name="PAY_SEPT" value="0" placeholder="e.g., -1">
+        </div>
+        <div class="form-group">
+            <label for="PAY_AUG">Month - 2</label>
+            <input type="number" id="PAY_AUG" name="PAY_AUG" value="0" placeholder="e.g., 0">
+        </div>
+        <div class="form-group">
+            <label for="PAY_JUL">Month - 3</label>
+            <input type="number" id="PAY_JUL" name="PAY_JUL" value="0" placeholder="e.g., 0">
+        </div>
+    </div>
 
-            <div class="section">
-                <h3 class="section-title">
-                    <span class="section-icon">💳</span>
-                    Payment Records
-                    <span class="risk-indicator risk-low">Low Risk Indicator</span>
-                </h3>
-                <p class="helper-text" style="margin-bottom: 15px; font-weight: 500;">Amount paid (₹) each month from September to April</p>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="PAY_AMT_SEPT">September Payment</label>
-                        <input type="number" id="PAY_AMT_SEPT" name="PAY_AMT_SEPT" required placeholder="e.g., 5000">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_AMT_AUG">August Payment</label>
-                        <input type="number" id="PAY_AMT_AUG" name="PAY_AMT_AUG" required placeholder="e.g., 6000">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_AMT_JUL">July Payment</label>
-                        <input type="number" id="PAY_AMT_JUL" name="PAY_AMT_JUL" required placeholder="e.g., 5500">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="PAY_AMT_JUN">June Payment</label>
-                        <input type="number" id="PAY_AMT_JUN" name="PAY_AMT_JUN" required placeholder="e.g., 5200">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_AMT_MAY">May Payment</label>
-                        <input type="number" id="PAY_AMT_MAY" name="PAY_AMT_MAY" required placeholder="e.g., 4800">
-                    </div>
-                    <div class="form-group">
-                        <label for="PAY_AMT_APR">April Payment</label>
-                        <input type="number" id="PAY_AMT_APR" name="PAY_AMT_APR" required placeholder="e.g., 5000">
-                    </div>
-                </div>
-            </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label for="PAY_JUN">Month - 4</label>
+            <input type="number" id="PAY_JUN" name="PAY_JUN" value="0" placeholder="e.g., 1">
+        </div>
+        <div class="form-group">
+            <label for="PAY_MAY">Month - 5</label>
+            <input type="number" id="PAY_MAY" name="PAY_MAY" value="0" placeholder="e.g., 0">
+        </div>
+        <div class="form-group">
+            <label for="PAY_APR">Month - 6</label>
+            <input type="number" id="PAY_APR" name="PAY_APR" value="0" placeholder="e.g., -1">
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3 class="section-title">
+        <span class="section-icon">💰</span>
+        Bill Statements
+        <!-- <span class="risk-indicator risk-high">High Risk Indicator</span> -->
+    </h3>
+    <p class="helper-text" style="margin-bottom: 15px; font-weight: 500;">Monthly bill amounts (₹)</p>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="BILL_AMT_SEPT">Month - 1 Bill</label>
+            <input type="number" id="BILL_AMT_SEPT" name="BILL_AMT_SEPT" required placeholder="e.g., 25000">
+        </div>
+        <div class="form-group">
+            <label for="BILL_AMT_AUG">Month - 2 Bill</label>
+            <input type="number" id="BILL_AMT_AUG" name="BILL_AMT_AUG" required placeholder="e.g., 30000">
+        </div>
+        <div class="form-group">
+            <label for="BILL_AMT_JUL">Month - 3 Bill</label>
+            <input type="number" id="BILL_AMT_JUL" name="BILL_AMT_JUL" required placeholder="e.g., 28000">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="BILL_AMT_JUN">Month - 4 Bill</label>
+            <input type="number" id="BILL_AMT_JUN" name="BILL_AMT_JUN" required placeholder="e.g., 27000">
+        </div>
+        <div class="form-group">
+            <label for="BILL_AMT_MAY">Month - 5 Bill</label>
+            <input type="number" id="BILL_AMT_MAY" name="BILL_AMT_MAY" required placeholder="e.g., 26000">
+        </div>
+        <div class="form-group">
+            <label for="BILL_AMT_APR">Month - 6 Bill</label>
+            <input type="number" id="BILL_AMT_APR" name="BILL_AMT_APR" required placeholder="e.g., 24000">
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3 class="section-title">
+        <span class="section-icon">💳</span>
+        Payment Records
+        <!-- <span class="risk-indicator risk-low">Low Risk Indicator</span> -->
+    </h3>
+    <p class="helper-text" style="margin-bottom: 15px; font-weight: 500;">Amount paid (₹) each month</p>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="PAY_AMT_SEPT">Month - 1 Payment</label>
+            <input type="number" id="PAY_AMT_SEPT" name="PAY_AMT_SEPT" required placeholder="e.g., 5000">
+        </div>
+        <div class="form-group">
+            <label for="PAY_AMT_AUG">Month - 2 Payment</label>
+            <input type="number" id="PAY_AMT_AUG" name="PAY_AMT_AUG" required placeholder="e.g., 6000">
+        </div>
+        <div class="form-group">
+            <label for="PAY_AMT_JUL">Month - 3 Payment</label>
+            <input type="number" id="PAY_AMT_JUL" name="PAY_AMT_JUL" required placeholder="e.g., 5500">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="PAY_AMT_JUN">Month - 4 Payment</label>
+            <input type="number" id="PAY_AMT_JUN" name="PAY_AMT_JUN" required placeholder="e.g., 5200">
+        </div>
+        <div class="form-group">
+            <label for="PAY_AMT_MAY">Month - 5 Payment</label>
+            <input type="number" id="PAY_AMT_MAY" name="PAY_AMT_MAY" required placeholder="e.g., 4800">
+        </div>
+        <div class="form-group">
+            <label for="PAY_AMT_APR">Month - 6 Payment</label>
+            <input type="number" id="PAY_AMT_APR" name="PAY_AMT_APR" required placeholder="e.g., 5000">
+        </div>
+    </div>
+</div>
+
 
             <div class="button-group">
                 <a href="/" class="btn-secondary">← Back to Home</a>
